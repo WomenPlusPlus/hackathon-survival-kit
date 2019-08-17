@@ -360,3 +360,272 @@ TL;DR: A manual Dropbox that stops you from making:
 
 ---
 
+## Gitting Started - Locally
+
+* Git - A version control system that manages your files
+* Repository - Git tracks changes down to the line, so it would not be fun to use it for your whole hard drive
+    A repository is a folder that contains all of your code (it **can** contain subfolders).
+    Think of a repository as a project. Each repo is a new project.
+* Init - Init initialises a git repo inside the directory you are currently in. Basically, it creates a hidden `.git`folder in that directory
+
+---
+
+## Gitting Started - Locally
+
+* Add - Use this command to add files to your repository. By default, git will track nothing until you add some files.
+* Commit - A commit is a specific point in time that you want to track. Git is a manual tool, so you tell it when you have done something important
+
+---
+
+## Exercise Time
+
+![](https://media.giphy.com/media/UvvK8rOSHPxgjo9ryD/giphy.gif)
+
+---
+
+1. Create a new directory called `git_some`
+2. Cd into that directory
+3. Run `git init`
+4. Create a new file called `testing123.txt`
+5. Run `git add testing123.txt`
+6. Run `git commit -m 'Initial commit'`
+
+---
+
+## Exercise Review
+
+Not too hard, right? Git is like a snapshot tool on your machine. It can monitor repositories and store all the changes. When you want to go back, git will do it for you.
+
+Commits - Notice that we used the `-m` argument here? **ALWAYS** do this! Every commit should have a message with it and that message should [be](https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503):
+* Clear
+* Informative
+* Short
+
+---
+
+## Hold on, we are going deep now
+
+Every time you create a commit, git will create a unique ID for it.
+
+We can see that by running `git log`
+
+---
+
+## Code Along Time!
+
+1. Let's add a file `testing234.txt`
+2. Now add it to git
+3. And a new file called `dont_you.txt`
+4. Now commit it with the message `add new test files`
+5. Whoa now! Did we mess up?
+
+---
+
+## Yes we did!
+
+* We can check if we messed up by seeing the status of our repo, with `git status`
+* We see `dont_you.txt` is an untracked file! But we don't want to make a whole new commit, do we?
+* `git commit --amend` to the rescue!
+* Amend a commit removes all the files you added to git in the last commit and allow you to make a new commit'
+
+---
+
+## Let's Do It!
+
+* `git add dont_you.txt`
+* `git commit --amend`
+
+Git will open up a text editor showing some information about your commit in the terminal, you can change the message to `forget about me` and close the editor (with `Ctrl-X` usually)
+
+Run `git log` and see that change!
+
+---
+
+## Pre-Commit Boo Boos
+
+So, you accidentally added a file to git, like `passwords.txt` and realised you don't want it? OK:
+
+`git rm passwords.txt`
+
+But wait, I wanted to keep a copy on my machine! I need it!
+
+`git rm --cached passwords.txt`
+
+---
+
+## Some things can't be amended
+
+Git keeps a history of everything you do, and it gives you some tools to change that history. The two we would use most often are `revert` and `reset`
+
+We can summarise their differences simply:
+* `revert` modifies the log to show you fucked up (i.e. real history)
+* `reset` removes your fuck ups from the log completely (i.e. propaganda)
+
+---
+
+## Revert
+
+Sometimes you may want to try something a bit...crazy (like at a hackathon). Maybe it does not work out, but you still want your efforts preserved. Here we use `revert`
+
+---
+
+## Exercise Time!
+
+![](https://media.giphy.com/media/4KkSbPnZ5Skec/giphy.gif)
+
+---
+
+1. Create a new repo called `reversion`
+2. Add some files and create an initial commit
+3. Now create some files with stupid names and create a second commit
+4. Use git log to find your second commit ID
+5. Run `git revert <ID>`
+
+What changed? What does `git log` say now?
+
+---
+
+## Reset
+
+Reset is a bit different and will not just undo the commit you specify but it will roll your whole repository back to that point in time.
+
+---
+
+## Exercise Time!
+
+![](https://media.giphy.com/media/4KRF5TgqQubWU/giphy.gif)
+
+---
+
+1. Create a new repo called `reset`
+2. Add some files as usual and commit.
+3. Now create a few extra commits with files named 2,3,4,5
+4. Find the ID of your second commit
+5. Run `git reset --hard <ID>`
+
+What changed? What does `git log` show? Where are the other commits?
+
+---
+
+## Hit the books!
+
+![bg contain right](https://media.giphy.com/media/TI32JwHmWQEi4/giphy.gif)
+
+We used `--hard` when running `git reset`, what does it mean? And what are the differences between `--hard`, `--soft` and `--mixed`?
+
+---
+
+## SIDENOTE: Branches and HEADS
+
+This is beyond the scope of this workshop but understanding the way git works makes all of these commands a lot easier to use!
+
+
+---
+
+## SIDENOTE: What is the master branch?
+
+Aside from having a questionable name, this is the default branch that git makes for you.
+
+You can think of a branch as a list of commits, running `git log` will show you that list for the branch you are on...
+
+![](https://git-scm.com/book/en/v2/images/commits-and-parents.png)
+
+---
+
+## SIDENOTE: Branches
+
+Git is designed to be a tool for working with others. Working with others is hard. Git tries to solve this with branches. Each time you want to work on something, you can create a new branch:
+`git branch <new_branch_name>`
+`git checkout <new_branch_name>`
+
+---
+
+## SIDENOTE: Merging
+
+That command will split your repository from the latest commit and all of your new commits will be stored in a new list.
+Done with the new thing you wanted to do?
+
+`git checkout master`
+`git merge <new_branch_name>`
+
+![bg right contain](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwac-cdn.atlassian.com%2Fdam%2Fjcr%3A83323200-3c57-4c29-9b7e-e67e98745427%2FBranch-1.png%3FcdnVersion%3Djo&f=1)
+
+---
+
+## SIDENOTE: `HEAD`
+
+You will see this word a lot when using git.
+
+HEAD is basically the tip of where you are right now, it is a pointer to a particular branch.
+
+By default, the HEAD is always the latest commit of the `master` branch but, when you checkout a new branch, HEAD will now point to the latest commit of `new_branch`
+
+---
+
+## Remote
+
+Git is a great tool for backups, but it is not so useful when you are only backing up onto one machine. For this, we need an external place (or multiple) to store your repos.
+
+We have quite a few options.
+
+And, the one we use today is the one you all choose.
+
+---
+
+## Team Work Makes the Dream Work
+
+Split into 3 groups.
+
+1. Github
+2. Gitlab
+3. Bitbucket
+
+10 mins to make a 2 min (verbal) presentation about the site, its features, its benefits and drawbacks.
+
+---
+
+I kid, of course. There is no such thing as free will, we will be using Github.
+
+Not because it is ethical, moral or even the best choice. But, like all choices, because it is popular.
+
+---
+
+## Remote Work
+
+Now, we need to:
+1. Create accounts
+2. Create a repository
+3. Copy the url of the repository and tell git about it
+
+`git remote add origin <URL>`
+
+**NOTE** Origin is the normal name chosen, but you can choose anything and even have more than one remote endpoint
+
+---
+
+## Push It Real Good
+
+Pushing is the act of pushing the code from your machine to the remote server. It is as easy as:
+
+`git push origin master`
+
+---
+
+## Pull The Other One
+
+Maybe your dog is also using the repository and they added a cool new pic of them running in a field. But they pushed it to the server, how do you get it now?!?!!?!
+
+`git pull origin master`
+
+---
+
+## Some Rules
+
+* **ALWAYS** commit your changes
+* **ALWAYS** pull before you push
+
+---
+
+
+
+
