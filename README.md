@@ -38,8 +38,8 @@ paginate: true
 * But I taught these things to myself before, during and after university
 * And I have been teaching since I was 21
 
-I love teaching, tech and professionalism
-I hate: memems, GIFs, awkward humour and pizza
+I love: teaching, tech and professionalism
+I hate: memes, GIFs, awkward humour and pizza
 
 ---
 
@@ -182,6 +182,9 @@ if you are a Windows User (using command prompt), then you must remember to use 
 
 ### Make a directory
 `mkdir new_folder`
+
+The `~` symbol is a shortcut for your `HOME` and can always use:
+`cd ~`
 
 ---
 
@@ -458,8 +461,8 @@ But wait, I wanted to keep a copy on my machine! I need it!
 Git keeps a history of everything you do, and it gives you some tools to change that history. The two we would use most often are `revert` and `reset`
 
 We can summarise their differences simply:
-* `revert` modifies the log to show you fucked up (i.e. real history)
-* `reset` removes your fuck ups from the log completely (i.e. propaganda)
+* `revert` modifies the log to show you messed up (i.e. real history)
+* `reset` removes your mess ups from the log completely (i.e. propaganda)
 
 ---
 
@@ -626,6 +629,233 @@ Maybe your dog is also using the repository and they added a cool new pic of the
 
 ---
 
+## Down The Rabbit Hole
+
+First, in order to push things to and from a remote repository, the remote needs to know that it is you.
+
+Really, there is only one way of doing it, with SSH keys.
+
+This is basically a secure key created for your device that allows you to connect to the remote server.
 
 
+---
 
+## Together Time
+
+1. `ssh-keygen`
+2. Choose all the defaults
+3. Copy the contents of the created file:
+`cat ~/.ssh/id_rsa.pub`
+4. Go to github.com and click on your profile->settings->SSH and GPG Keys
+5. Copy the file contents into the big text box and save
+6. Now you can `push` and `pull` with no problems!
+
+---
+
+## Real World Problems
+
+Merging and merge conflicts
+
+It is unlikely that you will use branches at a hackathon (but not impossible), but merge conflicts can also occur on the same branch. Consider this:
+
+---
+
+1. You write some code that prints something to the screen
+2. A team member does the same thing, in a different way
+3. They push their code first
+4. You commit and pull remote changes before you push your new work
+5. **MERGE CONFLICT** Your work and their work are in the same place and git has no idea what to do, so you must fix it...
+
+---
+
+```
+<<<<<<< HEAD
+console.log('HELP ME');
+
+=======
+
+function print(msg) {
+    console.log(msg);
+}
+print('HELP ME');
+>>>>>>> Team member's commit
+```
+
+---
+
+## Fixing a Merge Commit
+
+* The file clearly shows where the issues are and you can choose to remove their code, your code or manually merge it.
+* Once you do, add the file to git and commit, explaining your changes
+* PROFIT
+
+---
+
+# Let's Use These Skills
+
+OK, now is the time for a big final exercise. Whatever time we have left, we will make a simple webpage using Git and then putting it online using Github.
+
+If we run out of time, your homework will be to go through the code in the repository and modify it to suit your neds.
+
+---
+
+# What Have We Covered?
+
+* CLI
+* Git
+* Github
+
+---
+
+# Next?
+
+* Web Things!
+    * Well, Frontend web things
+
+---
+
+![bg contain](https://www.codeproject.com/KB/Nodejs/1070392/globalArchitecture.png)
+
+---
+
+# Frontend?
+
+* HTML
+    * Hyper Text Markup Language
+* CSS
+    * Cascading Style Sheets
+* JS
+    * JavaScript
+
+---
+
+#
+## Don't Fight Me On This
+
+![](https://miro.medium.com/max/1200/1*Q2t-jgIzVx_w1Cyy1YlbNw.png)
+
+---
+
+# What Should You/Your Team Use?
+
+* WTFYW
+    * Family Friendly: WWFY
+
+---
+
+# Back To Basics
+
+```
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hacker Profile</title>
+  <meta name="description" content="Survival Kit">
+  <meta name="author" content="encima">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+```
+
+---
+
+# Final Exercise
+
+![](https://media.giphy.com/media/zrcPc3aH2dbZXfnL9N/giphy.gif)
+
+---
+
+1. Create a new directory for your website
+2. CD into it and create a new git repository
+3. Create a new file called `index.html`
+4. Copy the code from the above slide into it
+5. Go to github and create a new repository (called `about-me`)
+
+---
+
+6. Go to the settings of the repository and scroll down to `Github Pages`
+7. Enable it for the `master` branch
+8. Copy the URL and perform the command to add it as a `remote`
+9. Edit the file to show some information about you
+10. Create `img` and `css` folders
+11. Add a picture of you to the folder (if you are happy for it to be public)
+
+---
+
+# CSS
+
+```
+body { //element
+    background:blue;
+    color:white;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.centred { //class
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+```
+
+---
+
+11. Copy the `site/css/styles.css` file into your repository.
+12. Play around!
+13. Edit it and go wild.
+14. Commit and push **all** changes
+15. Open a browser and go to:
+    `https://<USERNAME>.github.io/profile`
+16. Done!
+
+---
+
+## But..I want more!
+
+![](https://media.giphy.com/media/bEvQzecJohmOQ/giphy.gif)
+
+---
+
+## Useful Sites
+
+* [Help](https://stackoverflow.com)
+* [All Docs](https://devdocs.io)
+* [Web Docs](https://developer.mozilla.org)
+* [Community] (https://www.reddit.com/r/learnprogramming/)
+* [Learning/Resources] (https://github.com/mike-north/awesome-learn-to-code)
+
+---
+
+# Hackathon  Tips - Dev
+
+* The right tool for the job is...
+    * The one(s) you know
+* As much as you may love the project, you will likely stop after Sunday; leave it in a usable state
+
+---
+
+# Hackathon Tips - Non Dev
+
+* Never underestimate the pitch
+* Never assume your audience
+    * i.e. They will know what an API is
+* Check in with your team **often**
+* Shut off when you need to 
+    * Individually and as a
+* Not all time needs to be spent coding
+
+---
+
+## Go Forth And Hack
+
+Spread the word, bring your friends
+
+[W++](https://www.womenplusplus.ch/)
+[Hack'n'Lead](https://www.womenplusplus.ch/hacknlead)
+[Events](https://www.womenplusplus.ch/events)

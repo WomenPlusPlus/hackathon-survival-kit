@@ -1,0 +1,799 @@
+<!DOCTYPE html><html lang="en-GB"><head><title>Your Hackathon Survival Kit</title><meta property="og:title" content="Your Hackathon Survival Kit"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body,html{background:#000;height:100%;margin:0;overflow:hidden}[data-bespoke-marp-fragment=inactive]{visibility:hidden}.bespoke-marp-osc{display:none;opacity:0}.bespoke-marp-parent{bottom:0;left:0;position:absolute;right:0;top:0}.bespoke-marp-parent>.bespoke-marp-osc{background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:1}.bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}.bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}.bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}.bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}.bespoke-marp-parent>.bespoke-marp-osc>button{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}.bespoke-marp-parent>.bespoke-marp-osc>button:disabled{cursor:not-allowed;opacity:.15!important}.bespoke-marp-parent>.bespoke-marp-osc>button:hover{opacity:1}.bespoke-marp-parent>.bespoke-marp-osc>button:hover:active{opacity:.6}.bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled){transition:none}.bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTBMMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;height:32px;overflow:hidden;text-indent:100%;white-space:nowrap;width:32px}.bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMzIgOTBsNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;height:32px;overflow:hidden;text-indent:100%;white-space:nowrap;width:32px}.bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwIDcwSDIwVjUwbTIwIDBMMjAgNzBtNDAtNDBoMjB2MjBtLTIwIDBsMjAtMjAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;height:32px;overflow:hidden;text-indent:100%;white-space:nowrap;width:32px}.bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen].exit{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwIDUwaDIwdjIwbS0yMCAwbDIwLTIwbTQwIDBINjBWMzBtMjAgMEw2MCA1MCIvPjwvc3ZnPg==")}.bespoke-marp-parent.bespoke-marp-inactive{cursor:none}.bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}svg.bespoke-marp-slide{height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%;z-index:-1}svg.bespoke-marp-slide.bespoke-marp-active{pointer-events:auto;z-index:0}.bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}.bespoke-progress-parent+.bespoke-marp-parent{top:5px}.bespoke-progress-parent .bespoke-progress-bar{flex:0 0 0;background:#0288d1;transition:flex-basis .2s cubic-bezier(0,1,1,1)}}@media print{.bespoke-marp-osc,.bespoke-progress-parent{display:none!important;transition:none!important}.bespoke-marp-parent{top:0}}</style><style>@charset "UTF-8";@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700");article#presentation > svg > foreignObject > section {
+  width: 1280px;
+  height: 720px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  scroll-snap-align: center center;
+}article#presentation > svg > foreignObject > section::after {
+  bottom: 0;
+  content: attr(data-marpit-pagination);
+  padding: inherit;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}article#presentation > svg > foreignObject > section:not([data-marpit-pagination])::after {
+  display: none;
+}/* Normalization */article#presentation > svg > foreignObject > section h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}@page {
+  size: 1280px 720px;
+  margin: 0;
+}@media print {html, body {
+  background-color: #fff;
+  margin: 0;
+  page-break-inside: avoid;
+  break-inside: avoid-page;
+}
+  article#presentation > svg > foreignObject > section {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  article#presentation > svg > foreignObject > section, article#presentation > svg > foreignObject > section * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  article#presentation > svg[data-marpit-svg] {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+  }
+}article#presentation > svg > foreignObject > section svg[data-marp-fitting=svg]{display:block;height:auto;width:100%}@supports (-ms-ime-align:auto){article#presentation > svg > foreignObject > section svg[data-marp-fitting=svg]{position:static}}article#presentation > svg > foreignObject > section svg[data-marp-fitting=svg].__reflow__{content:""}@supports (-ms-ime-align:auto){article#presentation > svg > foreignObject > section svg[data-marp-fitting=svg].__reflow__{position:relative}}article#presentation > svg > foreignObject > section [data-marp-fitting-svg-content]{display:table;white-space:nowrap}article#presentation > svg > foreignObject > section [data-marp-fitting-svg-content-wrap]{white-space:pre}article#presentation > svg > foreignObject > section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
+/*!
+ * Marp / Marpit Gaia theme.
+ *
+ * @theme gaia
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 4:3 960px 720px
+ */article#presentation > svg > foreignObject > section .hljs{display:block;overflow-x:auto;padding:.5em;background:#000;color:#f8f8f8}article#presentation > svg > foreignObject > section .hljs-comment,article#presentation > svg > foreignObject > section .hljs-quote{color:#aeaeae;font-style:italic}article#presentation > svg > foreignObject > section .hljs-keyword,article#presentation > svg > foreignObject > section .hljs-selector-tag,article#presentation > svg > foreignObject > section .hljs-type{color:#e28964}article#presentation > svg > foreignObject > section .hljs-string{color:#65b042}article#presentation > svg > foreignObject > section .hljs-subst{color:#daefa3}article#presentation > svg > foreignObject > section .hljs-link,article#presentation > svg > foreignObject > section .hljs-regexp{color:#e9c062}article#presentation > svg > foreignObject > section .hljs-name,article#presentation > svg > foreignObject > section .hljs-section,article#presentation > svg > foreignObject > section .hljs-tag,article#presentation > svg > foreignObject > section .hljs-title{color:#89bdff}article#presentation > svg > foreignObject > section .hljs-class .hljs-title,article#presentation > svg > foreignObject > section .hljs-doctag{text-decoration:underline}article#presentation > svg > foreignObject > section .hljs-bullet,article#presentation > svg > foreignObject > section .hljs-number,article#presentation > svg > foreignObject > section .hljs-symbol{color:#3387cc}article#presentation > svg > foreignObject > section .hljs-params,article#presentation > svg > foreignObject > section .hljs-template-variable,article#presentation > svg > foreignObject > section .hljs-variable{color:#3e87e3}article#presentation > svg > foreignObject > section .hljs-attribute{color:#cda869}article#presentation > svg > foreignObject > section .hljs-meta{color:#8996a8}article#presentation > svg > foreignObject > section .hljs-formula{background-color:#0e2231;color:#f8f8f8;font-style:italic}article#presentation > svg > foreignObject > section .hljs-addition{background-color:#253b22;color:#f8f8f8}article#presentation > svg > foreignObject > section .hljs-deletion{background-color:#420e09;color:#f8f8f8}article#presentation > svg > foreignObject > section .hljs-selector-class{color:#9b703f}article#presentation > svg > foreignObject > section .hljs-selector-id{color:#8b98ab}article#presentation > svg > foreignObject > section .hljs-emphasis{font-style:italic}article#presentation > svg > foreignObject > section .hljs-strong{font-weight:700}article#presentation > svg > foreignObject > section svg[data-marp-fitting=svg]{max-height:580px}article#presentation > svg > foreignObject > section h1,article#presentation > svg > foreignObject > section h2,article#presentation > svg > foreignObject > section h3,article#presentation > svg > foreignObject > section h4,article#presentation > svg > foreignObject > section h5,article#presentation > svg > foreignObject > section h6{margin:.5em 0 0}article#presentation > svg > foreignObject > section h1 strong,article#presentation > svg > foreignObject > section h2 strong,article#presentation > svg > foreignObject > section h3 strong,article#presentation > svg > foreignObject > section h4 strong,article#presentation > svg > foreignObject > section h5 strong,article#presentation > svg > foreignObject > section h6 strong{font-weight:inherit}article#presentation > svg > foreignObject > section h1{font-size:1.8em}article#presentation > svg > foreignObject > section h2{font-size:1.5em}article#presentation > svg > foreignObject > section h3{font-size:1.3em}article#presentation > svg > foreignObject > section h4{font-size:1.1em}article#presentation > svg > foreignObject > section h5{font-size:1em}article#presentation > svg > foreignObject > section h6{font-size:.9em}article#presentation > svg > foreignObject > section blockquote,article#presentation > svg > foreignObject > section p{margin:1em 0 0}article#presentation > svg > foreignObject > section ol>li,article#presentation > svg > foreignObject > section ul>li{margin:.3em 0 0}article#presentation > svg > foreignObject > section ol>li>p,article#presentation > svg > foreignObject > section ul>li>p{margin:.6em 0 0}article#presentation > svg > foreignObject > section code{display:inline-block;font-family:Roboto Mono,monospace;font-size:.8em;letter-spacing:0;margin:-.1em .15em;padding:.1em .2em;vertical-align:baseline}article#presentation > svg > foreignObject > section pre{display:block;margin:1em 0 0;min-height:1em;overflow:visible}article#presentation > svg > foreignObject > section pre code{box-sizing:border-box;margin:0;min-width:100%;padding:.5em;font-size:.7em}article#presentation > svg > foreignObject > section pre code svg[data-marp-fitting=svg]{max-height:calc(580px - 1em)}article#presentation > svg > foreignObject > section blockquote{margin:1em 0 0;padding:0 1em;position:relative}article#presentation > svg > foreignObject > section blockquote:after,article#presentation > svg > foreignObject > section blockquote:before{content:"“";display:block;font-family:Times New Roman,serif;font-weight:700;position:absolute}article#presentation > svg > foreignObject > section blockquote:before{top:0;left:0}article#presentation > svg > foreignObject > section blockquote:after{right:0;bottom:0;transform:rotate(180deg)}article#presentation > svg > foreignObject > section blockquote>:first-child{margin-top:0}article#presentation > svg > foreignObject > section mark{background:transparent}article#presentation > svg > foreignObject > section table{border-spacing:0;border-collapse:collapse;margin:1em 0 0}article#presentation > svg > foreignObject > section table td,article#presentation > svg > foreignObject > section table th{padding:.2em .4em;border-width:1px;border-style:solid}article#presentation > svg > foreignObject > section{background-image:linear-gradient(135deg,hsla(0,0%,53.3%,0),hsla(0,0%,53.3%,.02) 50%,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.05));font-size:35px;font-family:Lato,Avenir Next,Avenir,Trebuchet MS,Segoe UI,sans-serif;height:720px;line-height:1.35;letter-spacing:1.25px;padding:70px;width:1280px;color:#455a64;background-color:#fff8e1}article#presentation > svg > foreignObject > section>:first-child,article#presentation > svg > foreignObject > section>header:first-child+*{margin-top:0}article#presentation > svg > foreignObject > section a,article#presentation > svg > foreignObject > section mark{color:#0288d1}article#presentation > svg > foreignObject > section code{background:#6a7a7d;color:#fff8e1}article#presentation > svg > foreignObject > section h1 strong,article#presentation > svg > foreignObject > section h2 strong,article#presentation > svg > foreignObject > section h3 strong,article#presentation > svg > foreignObject > section h4 strong,article#presentation > svg > foreignObject > section h5 strong,article#presentation > svg > foreignObject > section h6 strong{color:#0288d1}article#presentation > svg > foreignObject > section pre>code{background:#455a64}article#presentation > svg > foreignObject > section blockquote:after,article#presentation > svg > foreignObject > section blockquote:before,article#presentation > svg > foreignObject > section footer,article#presentation > svg > foreignObject > section header,article#presentation > svg > foreignObject > section section:after{color:#6a7a7d}article#presentation > svg > foreignObject > section table td,article#presentation > svg > foreignObject > section table th{border-color:#455a64}article#presentation > svg > foreignObject > section table thead th{background:#455a64;color:#fff8e1}article#presentation > svg > foreignObject > section table tbody>tr:nth-child(odd) td,article#presentation > svg > foreignObject > section table tbody>tr:nth-child(odd) th{background:rgba(69,90,100,.1)}article#presentation > svg > foreignObject > section.invert{color:#fff8e1;background-color:#455a64}article#presentation > svg > foreignObject > section.invert a,article#presentation > svg > foreignObject > section.invert mark{color:#81d4fa}article#presentation > svg > foreignObject > section.invert code{background:#dad8c8;color:#455a64}article#presentation > svg > foreignObject > section.invert h1 strong,article#presentation > svg > foreignObject > section.invert h2 strong,article#presentation > svg > foreignObject > section.invert h3 strong,article#presentation > svg > foreignObject > section.invert h4 strong,article#presentation > svg > foreignObject > section.invert h5 strong,article#presentation > svg > foreignObject > section.invert h6 strong{color:#81d4fa}article#presentation > svg > foreignObject > section.invert pre>code{background:#fff8e1}article#presentation > svg > foreignObject > section.invert blockquote:after,article#presentation > svg > foreignObject > section.invert blockquote:before,article#presentation > svg > foreignObject > section.invert footer,article#presentation > svg > foreignObject > section.invert header,article#presentation > svg > foreignObject > section.invert section:after{color:#dad8c8}article#presentation > svg > foreignObject > section.invert table td,article#presentation > svg > foreignObject > section.invert table th{border-color:#fff8e1}article#presentation > svg > foreignObject > section.invert table thead th{background:#fff8e1;color:#455a64}article#presentation > svg > foreignObject > section.invert table tbody>tr:nth-child(odd) td,article#presentation > svg > foreignObject > section.invert table tbody>tr:nth-child(odd) th{background:rgba(255,248,225,.1)}article#presentation > svg > foreignObject > section.gaia{color:#fff8e1;background-color:#0288d1}article#presentation > svg > foreignObject > section.gaia a,article#presentation > svg > foreignObject > section.gaia mark{color:#81d4fa}article#presentation > svg > foreignObject > section.gaia code{background:#cce2de;color:#0288d1}article#presentation > svg > foreignObject > section.gaia h1 strong,article#presentation > svg > foreignObject > section.gaia h2 strong,article#presentation > svg > foreignObject > section.gaia h3 strong,article#presentation > svg > foreignObject > section.gaia h4 strong,article#presentation > svg > foreignObject > section.gaia h5 strong,article#presentation > svg > foreignObject > section.gaia h6 strong{color:#81d4fa}article#presentation > svg > foreignObject > section.gaia pre>code{background:#fff8e1}article#presentation > svg > foreignObject > section.gaia blockquote:after,article#presentation > svg > foreignObject > section.gaia blockquote:before,article#presentation > svg > foreignObject > section.gaia footer,article#presentation > svg > foreignObject > section.gaia header,article#presentation > svg > foreignObject > section.gaia section:after{color:#cce2de}article#presentation > svg > foreignObject > section.gaia table td,article#presentation > svg > foreignObject > section.gaia table th{border-color:#fff8e1}article#presentation > svg > foreignObject > section.gaia table thead th{background:#fff8e1;color:#0288d1}article#presentation > svg > foreignObject > section.gaia table tbody>tr:nth-child(odd) td,article#presentation > svg > foreignObject > section.gaia table tbody>tr:nth-child(odd) th{background:rgba(255,248,225,.1)}article#presentation > svg > foreignObject > section.lead{display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:center}article#presentation > svg > foreignObject > section.lead h1,article#presentation > svg > foreignObject > section.lead h2,article#presentation > svg > foreignObject > section.lead h3,article#presentation > svg > foreignObject > section.lead h4,article#presentation > svg > foreignObject > section.lead h5,article#presentation > svg > foreignObject > section.lead h6{text-align:center}article#presentation > svg > foreignObject > section.lead h1 svg[data-marp-fitting=svg],article#presentation > svg > foreignObject > section.lead h2 svg[data-marp-fitting=svg],article#presentation > svg > foreignObject > section.lead h3 svg[data-marp-fitting=svg],article#presentation > svg > foreignObject > section.lead h4 svg[data-marp-fitting=svg],article#presentation > svg > foreignObject > section.lead h5 svg[data-marp-fitting=svg],article#presentation > svg > foreignObject > section.lead h6 svg[data-marp-fitting=svg]{--preserve-aspect-ratio:xMidYMid meet}article#presentation > svg > foreignObject > section.lead p{text-align:center}article#presentation > svg > foreignObject > section.lead blockquote>h1,article#presentation > svg > foreignObject > section.lead blockquote>h2,article#presentation > svg > foreignObject > section.lead blockquote>h3,article#presentation > svg > foreignObject > section.lead blockquote>h4,article#presentation > svg > foreignObject > section.lead blockquote>h5,article#presentation > svg > foreignObject > section.lead blockquote>h6,article#presentation > svg > foreignObject > section.lead blockquote>p{text-align:left}article#presentation > svg > foreignObject > section.lead blockquote svg[data-marp-fitting=svg]:not([data-marp-fitting-math]){--preserve-aspect-ratio:xMinYMin meet}article#presentation > svg > foreignObject > section.lead ol>li>p,article#presentation > svg > foreignObject > section.lead ul>li>p{text-align:left}article#presentation > svg > foreignObject > section.lead table{margin-left:auto;margin-right:auto}article#presentation > svg > foreignObject > section footer,article#presentation > svg > foreignObject > section header,article#presentation > svg > foreignObject > section:after{box-sizing:border-box;font-size:66%;height:70px;line-height:50px;overflow:hidden;padding:10px 25px;position:absolute}article#presentation > svg > foreignObject > section header{top:0}article#presentation > svg > foreignObject > section footer,article#presentation > svg > foreignObject > section header{left:0;right:0}article#presentation > svg > foreignObject > section footer{bottom:0}article#presentation > svg > foreignObject > section:after{right:0;bottom:0;font-size:80%}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"] {
+  padding: 0 !important;
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"]::before,
+article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"]::after,
+article#presentation > svg > foreignObject > section[data-marpit-advanced-background="content"]::before,
+article#presentation > svg > foreignObject > section[data-marpit-advanced-background="content"]::after {
+  display: none !important;
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] {
+  all: initial;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction="vertical"] {
+  flex-direction: column;
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split] > div[data-marpit-advanced-background-container] {
+  width: var(--marpit-advanced-background-split, 50%);
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split="right"] > div[data-marpit-advanced-background-container] {
+  margin-left: calc(100% - var(--marpit-advanced-background-split, 50%));
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure {
+  all: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: auto;
+  margin: 0;
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="content"],
+article#presentation > svg > foreignObject > section[data-marpit-advanced-background="pseudo"] {
+  background: transparent !important;
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background="pseudo"],
+article#presentation > svg[data-marpit-svg] > foreignObject[data-marpit-advanced-background="pseudo"] {
+  pointer-events: none !important;
+}article#presentation > svg > foreignObject > section[data-marpit-advanced-background-split] {
+  width: 100%;
+  height: 100%;
+}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button></div><article id="presentation"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="1" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<h1>The Survival Kit for your First Hackathon</h1>
+<h3><a href="https://gitpitch.com/encima/learn-git">https://gitpitch.com/encima/learn-git</a></h3>
+<h3>Women++</h3>
+<h3>Chris Gwilliams <a href="https://github.com/encima">https://github.com/encima</a></h3>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="2" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<ul>
+<li data-marpit-fragment="1">
+<p>Have you never been to a hackathon before? Afraid of what to expect, what is expected of you or that you do not have experience.</p>
+</li>
+<li data-marpit-fragment="2">
+<p>SHUT THAT VOICE UP. Anyone, and I mean anyone, should feel welcome at a hackathon.</p>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-marpit-fragments="1" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="3" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<ul>
+<li data-marpit-fragment="1">But, if you want to contribute and you do not have such a technical background, then this workshop can help you hit the ground running.</li>
+</ul>
+<p><img src="https://media.giphy.com/media/7kn27lnYSAE9O/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-marpit-fragments="4" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="4" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<h2>Who Am I? You Might Ask</h2>
+<ul>
+<li data-marpit-fragment="1">What right do I have to <code>mansplain</code> the basics of a field that was originally dominated by women?</li>
+<li data-marpit-fragment="2">Well...none</li>
+<li data-marpit-fragment="3">But I taught these things to myself before, during and after university</li>
+<li data-marpit-fragment="4">And I have been teaching since I was 21</li>
+</ul>
+<p>I love: teaching, tech and professionalism<br />
+I hate: memes, GIFs, awkward humour and pizza</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="5" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<p><img src="https://media.giphy.com/media/bA5EUCvMgDBkc/giphy.gif" alt="" /></p>
+<p>And I am a <strong>huge hypocrite</strong></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="4" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="6" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<h2>Topics</h2>
+<ul>
+<li data-marpit-fragment="1">The Command Line</li>
+<li data-marpit-fragment="2">Git</li>
+<li data-marpit-fragment="3">Github/Gitlab/Bitbucket etc</li>
+<li data-marpit-fragment="4">Web Development Introduction</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="7" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<h2>Structure</h2>
+<p><img src="https://media.giphy.com/media/S3sc3Pg9dFpUA/giphy.gif" alt="Freedom" /></p>
+<p>There is none! Ask if you need help, pee when you want and scream when you are frustrated.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-marpit-fragments="7" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="8" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<h2>Go Go Go!</h2>
+<p>First, the command line, also known as:</p>
+<ul>
+<li data-marpit-fragment="1">Terminal</li>
+<li data-marpit-fragment="2">Bash</li>
+<li data-marpit-fragment="3">Shell</li>
+<li data-marpit-fragment="4">Cmd</li>
+<li data-marpit-fragment="5">Command Prompt</li>
+<li data-marpit-fragment="6">Console</li>
+<li data-marpit-fragment="7">Barry (ok, not this one)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="9" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<h2>What is the shell?</h2>
+<p>Before we had the magic of windows and Graphical User Interfaces,<br />
+we had to do things the old way... with words on a pleasant black screen with green font.</p>
+<p><img src="http://mewbies.com/geek_fun_files/bsdgames/bsdgames_hangman.png" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="10" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<h2>We have GUIs now! Why not use them?</h2>
+<p>You can! Git has some pretty sweet Desktop applications.</p>
+<h3>BUT</h3>
+<p>some things are just quicker in a terminal</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="lead invert" data-paginate="true" data-theme="gaia" class="lead invert" data-marpit-pagination="11" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--theme:gaia;">
+<p><img src="https://media.giphy.com/media/kF6kHD7l9kXEBrPqPS/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="12" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h2>Start your engines</h2>
+<h3>Windows?</h3>
+<p><code>Win+R</code> Type <code>cmd</code><br />
+<code>Command Prompt</code></p>
+<h3>Mac?</h3>
+<p><code>Terminal</code></p>
+<h3>Linux?</h3>
+<p><code>Ctrl+Alt+T</code><br />
+<code>Terminal</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="13" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h2>A Windows note!</h2>
+<p>Microsoft recently launched WSL (Windows Subsystem for Linux). This is a huge step that allows Windows 10 users to run Linux inside their Windows OS.</p>
+<p>This workshop supports both Linux and Windows but, to make things easy, WSL makes life <em>so so so</em> much easier.</p>
+<p>If you are running Windows 10, click <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">here</a> to get set up.</p>
+<p>(<strong>NOTE</strong>: If enough of the workshop wants to set this up, then we will take a 15 minute break to do it all together)</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="14" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h2>Prompt</h2>
+<p><code>$__</code></p>
+<p>The prompt is the part of the terminal that is just sitting and waiting for your input.</p>
+<p>Before we give it some, we should know where we are!</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="15" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h2>PWD</h2>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>$ <span class="hljs-keyword">pwd</span>
+<span class="hljs-string">/home/encima/</span>
+</span></span></foreignObject></svg></code></pre>
+<p>pwd - present working directory, this is where you are right now</p>
+<p>Normall, this is your HOME directory:</p>
+<ul>
+<li data-marpit-fragment="1">Linux: /home/USERNAME</li>
+<li data-marpit-fragment="2">Mac: /Users/USERNAME</li>
+</ul>
+<p>(<strong>NOTE</strong>: In Windows, it is <code>cd</code>)</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="16" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h2>Slashes</h2>
+<p>Almost all of the world uses <code>/</code> to show a difference in path names</p>
+<p>BUT</p>
+<p>if you are a Windows User (using command prompt), then you must remember to use <code>\</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="17" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h2>Moving around!</h2>
+<h3>Change directories:</h3>
+<p><code>cd /Users/patty/Documents</code></p>
+<h3>List Directory Contents:</h3>
+<p><code>ls</code></p>
+<h3>Make a directory</h3>
+<p><code>mkdir new_folder</code></p>
+<p>The <code>~</code> symbol is a shortcut for your <code>HOME</code> and can always use:<br />
+<code>cd ~</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="18" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Arguments</h3>
+<p><img src="https://media.giphy.com/media/l41YkEBS3Br3PqqGI/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="19" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Arguments - The command line kind</h3>
+<p>Commands like <code>ls</code> and <code>cd</code> are <code>built-in commands</code>, this means that we can use them in the shell without needing to install anything</p>
+<p>We can give them <code>arguments</code> to change their default behaviour.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="20" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Show me <strong>ALL</strong> the things in the directory:</h3>
+<p><code>ls -ahl</code></p>
+<p>a = all (show me hidden files and folders, please)<br />
+h = human readable (I am not a machine!)<br />
+l =  long listing format (Give me all the details!)</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="21" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Exercise Time:</h3>
+<p><img src="https://media.giphy.com/media/l7EnApLyoAKwE/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="22" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<ol>
+<li>Change the directory to your home directory</li>
+<li>Create a new folder called 'newDir'</li>
+<li>Change into that directory</li>
+<li>List the contents</li>
+<li>Now list all the contents (showing all hidden files)</li>
+</ol>
+<p>What is in there? What do you think they mean?</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="23" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h2>Some extra commands</h2>
+<h3>Create a file</h3>
+<p><code>touch myfile.txt</code></p>
+<h3>Remove a file</h3>
+<p><code>rm myfile.txt</code></p>
+<h3>Remove a directory</h3>
+<p><code>rm -r myfolder</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-marpit-fragments="4" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="24" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Here Be Dragons!</h3>
+<ul>
+<li data-marpit-fragment="1">Notice how these things run with no confirmation or anything?</li>
+<li data-marpit-fragment="2">This little black screen has the power to make...or break your computer</li>
+<li data-marpit-fragment="3">Always double check what you type</li>
+<li data-marpit-fragment="4"><strong>NEVER</strong> run a script from the internet or from someone you do not know</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-fragments="5" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="25" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://vignette.wikia.nocookie.net/courage/images/d/d9/Muriel_Bagge.png/revision/latest?cb=20181025053335&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="25" data-marpit-fragments="5" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="25" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+<p>Your computer is like a relaxed Grandma. She will let you:</p>
+<ul>
+<li data-marpit-fragment="1">eat all the sweets</li>
+<li data-marpit-fragment="2">paint your own room</li>
+<li data-marpit-fragment="3">destroy your own furniture</li>
+</ul>
+<p>but she will <strong>not</strong>:</p>
+<ul>
+<li data-marpit-fragment="4">Let you open the medicine cupboard</li>
+<li data-marpit-fragment="5">Let you paint the lounge</li>
+</ul>
+</section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="lead invert" style="color:green;" data-marpit-advanced-background="pseudo" data-marpit-pagination="25" data-marpit-pagination-total="88"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="26" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Lets' get <strong>super</strong></h3>
+<p>To do the things Grandma won't let you do, you must <strong>become</strong> Grandma</p>
+<p>Everything outside of your home directory can contain important data.</p>
+<p>Every folder at the root <code>/</code> level is protected and you cannot touch it.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="27" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Superuser</h3>
+<p>To do these protected things:</p>
+<ul>
+<li data-marpit-fragment="1">Modify system files</li>
+<li data-marpit-fragment="2">Install programs</li>
+<li data-marpit-fragment="3">Start and stop services</li>
+</ul>
+<p>You must be an admin. Usually, in Linux, your account has admin rights but is stopped from doing these things by default.</p>
+<p>In Linux, we call an Admin: <code>superuser</code></p>
+<p>The default <code>superuser</code> account is: <code>root</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="28" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>I'm Sorry Dave, I'm Afraid I Can't Do That</h3>
+<p>Try running:<br />
+<code>hostname barry</code></p>
+<p>What happens? Why?</p>
+<p>To run this command, you have 2 options:</p>
+<ol>
+<li><code>su</code></li>
+<li><code>sudo</code></li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="29" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3><code>SU</code></h3>
+<p>SU = SUPERUSER</p>
+<p>Typing this command will log you in as the <code>root</code> user on your system and give you full rights to everything.</p>
+<p>It is <strong>NOT</strong> recommended.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="30" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3><code>SUDO</code></h3>
+<p>SUDO = SUPERUSER DO</p>
+<p><code>sudo hostname barry</code></p>
+<p>SUDO asks your machine to run the command you like as the root user and then switch back to your user once it is done.</p>
+<p><strong>USE THIS METHOD</strong></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="black" data-color="green" data-theme="gaia" class="lead invert" data-marpit-pagination="31" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:black;--color:green;--theme:gaia;color:green;background-color:black;background-image:none;">
+<h3>Tips and Tricks</h3>
+<ul>
+<li data-marpit-fragment="1">History - your shell knows what you ran before:<br />
+<code>use the up and down keys to move through your history of commands</code></li>
+<li data-marpit-fragment="2">Completion - files and folders can be long<br />
+<code>use the TAB key to autocomplete commands and file paths - this is CASE SENSITIVE</code></li>
+<li data-marpit-fragment="3">SEARCH - For things you ran a long time ago<br />
+<code>press CTRL+r to start a search and type what you are looking for, you will be shown matching results as you type</code></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="32" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://media.giphy.com/media/cnhpl4IeYgU7MCBdV2/giphy.gif&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="32" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="32" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;" data-marpit-advanced-background="content">
+<h2>LET'S GIT GOING</h2>
+</section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="lead invert" style="color:white;" data-marpit-advanced-background="pseudo" data-marpit-pagination="32" data-marpit-pagination-total="88"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="33" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h3>What is Git?</h3>
+<p>A Version Control System (VCS) that allows you to store files and access their  history at different points in time</p>
+<p>TL;DR: A manual Dropbox that stops you from making:</p>
+<ul>
+<li data-marpit-fragment="1">doc1.docx</li>
+<li data-marpit-fragment="2">doc1_final.docx</li>
+<li data-marpit-fragment="3">doc1_final_revised.docx</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="34" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h3>Sounds Great! How Do I Git It?</h3>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<ul>
+<li data-marpit-fragment="1">Linux: <code>apt/yum install git</code></li>
+<li data-marpit-fragment="2">OSX: <code>brew install git</code></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="35" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Gitting Started - Locally</h2>
+<ul>
+<li data-marpit-fragment="1">Git - A version control system that manages your files</li>
+<li data-marpit-fragment="2">Repository - Git tracks changes down to the line, so it would not be fun to use it for your whole hard drive<br />
+A repository is a folder that contains all of your code (it <strong>can</strong> contain subfolders).<br />
+Think of a repository as a project. Each repo is a new project.</li>
+<li data-marpit-fragment="3">Init - Init initialises a git repo inside the directory you are currently in. Basically, it creates a hidden <code>.git</code>folder in that directory</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="36" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Gitting Started - Locally</h2>
+<ul>
+<li data-marpit-fragment="1">Add - Use this command to add files to your repository. By default, git will track nothing until you add some files.</li>
+<li data-marpit-fragment="2">Commit - A commit is a specific point in time that you want to track. Git is a manual tool, so you tell it when you have done something important</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="37" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Exercise Time</h2>
+<p><img src="https://media.giphy.com/media/UvvK8rOSHPxgjo9ryD/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="38" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<ol>
+<li>Create a new directory called <code>git_some</code></li>
+<li>Cd into that directory</li>
+<li>Run <code>git init</code></li>
+<li>Create a new file called <code>testing123.txt</code></li>
+<li>Run <code>git add testing123.txt</code></li>
+<li>Run <code>git commit -m 'Initial commit'</code></li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="39" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Exercise Review</h2>
+<p>Not too hard, right? Git is like a snapshot tool on your machine. It can monitor repositories and store all the changes. When you want to go back, git will do it for you.</p>
+<p>Commits - Notice that we used the <code>-m</code> argument here? <strong>ALWAYS</strong> do this! Every commit should have a message with it and that message should <a href="https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503">be</a>:</p>
+<ul>
+<li data-marpit-fragment="1">Clear</li>
+<li data-marpit-fragment="2">Informative</li>
+<li data-marpit-fragment="3">Short</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="40" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Hold on, we are going deep now</h2>
+<p>Every time you create a commit, git will create a unique ID for it.</p>
+<p>We can see that by running <code>git log</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="41" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Code Along Time!</h2>
+<ol>
+<li>Let's add a file <code>testing234.txt</code></li>
+<li>Now add it to git</li>
+<li>And a new file called <code>dont_you.txt</code></li>
+<li>Now commit it with the message <code>add new test files</code></li>
+<li>Whoa now! Did we mess up?</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-marpit-fragments="4" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="42" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Yes we did!</h2>
+<ul>
+<li data-marpit-fragment="1">We can check if we messed up by seeing the status of our repo, with <code>git status</code></li>
+<li data-marpit-fragment="2">We see <code>dont_you.txt</code> is an untracked file! But we don't want to make a whole new commit, do we?</li>
+<li data-marpit-fragment="3"><code>git commit --amend</code> to the rescue!</li>
+<li data-marpit-fragment="4">Amend a commit removes all the files you added to git in the last commit and allow you to make a new commit'</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="43" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Let's Do It!</h2>
+<ul>
+<li data-marpit-fragment="1"><code>git add dont_you.txt</code></li>
+<li data-marpit-fragment="2"><code>git commit --amend</code></li>
+</ul>
+<p>Git will open up a text editor showing some information about your commit in the terminal, you can change the message to <code>forget about me</code> and close the editor (with <code>Ctrl-X</code> usually)</p>
+<p>Run <code>git log</code> and see that change!</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="44" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Pre-Commit Boo Boos</h2>
+<p>So, you accidentally added a file to git, like <code>passwords.txt</code> and realised you don't want it? OK:</p>
+<p><code>git rm passwords.txt</code></p>
+<p>But wait, I wanted to keep a copy on my machine! I need it!</p>
+<p><code>git rm --cached passwords.txt</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="45" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Some things can't be amended</h2>
+<p>Git keeps a history of everything you do, and it gives you some tools to change that history. The two we would use most often are <code>revert</code> and <code>reset</code></p>
+<p>We can summarise their differences simply:</p>
+<ul>
+<li data-marpit-fragment="1"><code>revert</code> modifies the log to show you messed up (i.e. real history)</li>
+<li data-marpit-fragment="2"><code>reset</code> removes your mess ups from the log completely (i.e. propaganda)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="46" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Revert</h2>
+<p>Sometimes you may want to try something a bit...crazy (like at a hackathon). Maybe it does not work out, but you still want your efforts preserved. Here we use <code>revert</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="47" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Exercise Time!</h2>
+<p><img src="https://media.giphy.com/media/4KkSbPnZ5Skec/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="48" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<ol>
+<li>Create a new repo called <code>reversion</code></li>
+<li>Add some files and create an initial commit</li>
+<li>Now create some files with stupid names and create a second commit</li>
+<li>Use git log to find your second commit ID</li>
+<li>Run <code>git revert &lt;ID&gt;</code></li>
+</ol>
+<p>What changed? What does <code>git log</code> say now?</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="49" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Reset</h2>
+<p>Reset is a bit different and will not just undo the commit you specify but it will roll your whole repository back to that point in time.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="50" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Exercise Time!</h2>
+<p><img src="https://media.giphy.com/media/4KRF5TgqQubWU/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="51" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<ol>
+<li>Create a new repo called <code>reset</code></li>
+<li>Add some files as usual and commit.</li>
+<li>Now create a few extra commits with files named 2,3,4,5</li>
+<li>Find the ID of your second commit</li>
+<li>Run <code>git reset --hard &lt;ID&gt;</code></li>
+</ol>
+<p>What changed? What does <code>git log</code> show? Where are the other commits?</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="52" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://media.giphy.com/media/TI32JwHmWQEi4/giphy.gif&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="52" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="52" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+<h2>Hit the books!</h2>
+
+<p>We used <code>--hard</code> when running <code>git reset</code>, what does it mean? And what are the differences between <code>--hard</code>, <code>--soft</code> and <code>--mixed</code>?</p>
+</section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="lead invert" style="color:white;" data-marpit-advanced-background="pseudo" data-marpit-pagination="52" data-marpit-pagination-total="88"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="53" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>SIDENOTE: Branches and HEADS</h2>
+<p>This is beyond the scope of this workshop but understanding the way git works makes all of these commands a lot easier to use!</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="54" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>SIDENOTE: What is the master branch?</h2>
+<p>Aside from having a questionable name, this is the default branch that git makes for you.</p>
+<p>You can think of a branch as a list of commits, running <code>git log</code> will show you that list for the branch you are on...</p>
+<p><img src="https://git-scm.com/book/en/v2/images/commits-and-parents.png" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="55" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>SIDENOTE: Branches</h2>
+<p>Git is designed to be a tool for working with others. Working with others is hard. Git tries to solve this with branches. Each time you want to work on something, you can create a new branch:<br />
+<code>git branch &lt;new_branch_name&gt;</code><br />
+<code>git checkout &lt;new_branch_name&gt;</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="56" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwac-cdn.atlassian.com%2Fdam%2Fjcr%3A83323200-3c57-4c29-9b7e-e67e98745427%2FBranch-1.png%3FcdnVersion%3Djo&amp;f=1&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="56" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="56" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+<h2>SIDENOTE: Merging</h2>
+<p>That command will split your repository from the latest commit and all of your new commits will be stored in a new list.<br />
+Done with the new thing you wanted to do?</p>
+<p><code>git checkout master</code><br />
+<code>git merge &lt;new_branch_name&gt;</code></p>
+</section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="lead invert" style="color:white;" data-marpit-advanced-background="pseudo" data-marpit-pagination="56" data-marpit-pagination-total="88"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="57" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>SIDENOTE: <code>HEAD</code></h2>
+<p>You will see this word a lot when using git.</p>
+<p>HEAD is basically the tip of where you are right now, it is a pointer to a particular branch.</p>
+<p>By default, the HEAD is always the latest commit of the <code>master</code> branch but, when you checkout a new branch, HEAD will now point to the latest commit of <code>new_branch</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="58" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="58" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Remote</h2>
+<p>Git is a great tool for backups, but it is not so useful when you are only backing up onto one machine. For this, we need an external place (or multiple) to store your repos.</p>
+<p>We have quite a few options.</p>
+<p>And, the one we use today is the one you all choose.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="59" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="59" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Team Work Makes the Dream Work</h2>
+<p>Split into 3 groups.</p>
+<ol>
+<li>Github</li>
+<li>Gitlab</li>
+<li>Bitbucket</li>
+</ol>
+<p>10 mins to make a 2 min (verbal) presentation about the site, its features, its benefits and drawbacks.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="60" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<p>I kid, of course. There is no such thing as free will, we will be using Github.</p>
+<p>Not because it is ethical, moral or even the best choice. But, like all choices, because it is popular.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="61" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="61" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Remote Work</h2>
+<p>Now, we need to:</p>
+<ol>
+<li>Create accounts</li>
+<li>Create a repository</li>
+<li>Copy the url of the repository and tell git about it</li>
+</ol>
+<p><code>git remote add origin &lt;URL&gt;</code></p>
+<p><strong>NOTE</strong> Origin is the normal name chosen, but you can choose anything and even have more than one remote endpoint</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="62" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Push It Real Good</h2>
+<p>Pushing is the act of pushing the code from your machine to the remote server. It is as easy as:</p>
+<p><code>git push origin master</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="63" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="63" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Pull The Other One</h2>
+<p>Maybe your dog is also using the repository and they added a cool new pic of them running in a field. But they pushed it to the server, how do you get it now?!?!!?!</p>
+<p><code>git pull origin master</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="64" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Some Rules</h2>
+<ul>
+<li data-marpit-fragment="1"><strong>ALWAYS</strong> commit your changes</li>
+<li data-marpit-fragment="2"><strong>ALWAYS</strong> pull before you push</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="65" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Down The Rabbit Hole</h2>
+<p>First, in order to push things to and from a remote repository, the remote needs to know that it is you.</p>
+<p>Really, there is only one way of doing it, with SSH keys.</p>
+<p>This is basically a secure key created for your device that allows you to connect to the remote server.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="66" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Together Time</h2>
+<ol>
+<li><code>ssh-keygen</code></li>
+<li>Choose all the defaults</li>
+<li>Copy the contents of the created file:<br />
+<code>cat ~/.ssh/id_rsa.pub</code></li>
+<li>Go to <a href="http://github.com">github.com</a> and click on your profile-&gt;settings-&gt;SSH and GPG Keys</li>
+<li>Copy the file contents into the big text box and save</li>
+<li>Now you can <code>push</code> and <code>pull</code> with no problems!</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="67" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Real World Problems</h2>
+<p>Merging and merge conflicts</p>
+<p>It is unlikely that you will use branches at a hackathon (but not impossible), but merge conflicts can also occur on the same branch. Consider this:</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="68" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<ol>
+<li>You write some code that prints something to the screen</li>
+<li>A team member does the same thing, in a different way</li>
+<li>They push their code first</li>
+<li>You commit and pull remote changes before you push your new work</li>
+<li><strong>MERGE CONFLICT</strong> Your work and their work are in the same place and git has no idea what to do, so you must fix it...</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="69" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'HELP ME'</span>);
+
+=======
+
+<span class="hljs-keyword">function</span> <span class="hljs-built_in">print</span>(msg) {
+    <span class="hljs-built_in">console</span>.log(msg);
+}
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'HELP ME'</span>);
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Team member<span class="hljs-string">'s commit
+</span></span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="70" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="70" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Fixing a Merge Commit</h2>
+<ul>
+<li data-marpit-fragment="1">The file clearly shows where the issues are and you can choose to remove their code, your code or manually merge it.</li>
+<li data-marpit-fragment="2">Once you do, add the file to git and commit, explaining your changes</li>
+<li data-marpit-fragment="3">PROFIT</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="71" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="71" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>Let's Use These Skills</h1>
+<p>OK, now is the time for a big final exercise. Whatever time we have left, we will make a simple webpage using Git and then putting it online using Github.</p>
+<p>If we run out of time, your homework will be to go through the code in the repository and modify it to suit your neds.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="72" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="72" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>What Have We Covered?</h1>
+<ul>
+<li data-marpit-fragment="1">CLI</li>
+<li data-marpit-fragment="2">Git</li>
+<li data-marpit-fragment="3">Github</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="73" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="73" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>Next?</h1>
+<ul>
+<li data-marpit-fragment="1">Web Things!
+<ul>
+<li data-marpit-fragment="2">Well, Frontend web things</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="74" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://www.codeproject.com/KB/Nodejs/1070392/globalArchitecture.png&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="74" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="74" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;" data-marpit-advanced-background="content"></section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="lead invert" style="color:white;" data-marpit-advanced-background="pseudo" data-marpit-pagination="74" data-marpit-pagination-total="88"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="75" data-marpit-fragments="6" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="75" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>Frontend?</h1>
+<ul>
+<li data-marpit-fragment="1">HTML
+<ul>
+<li data-marpit-fragment="2">Hyper Text Markup Language</li>
+</ul>
+</li>
+<li data-marpit-fragment="3">CSS
+<ul>
+<li data-marpit-fragment="4">Cascading Style Sheets</li>
+</ul>
+</li>
+<li data-marpit-fragment="5">JS
+<ul>
+<li data-marpit-fragment="6">JavaScript</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="76" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1></h1>
+<h2>Don't Fight Me On This</h2>
+<p><img src="https://miro.medium.com/max/1200/1*Q2t-jgIzVx_w1Cyy1YlbNw.png" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="77" data-marpit-fragments="2" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="77" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>What Should You/Your Team Use?</h1>
+<ul>
+<li data-marpit-fragment="1">WTFYW
+<ul>
+<li data-marpit-fragment="2">Family Friendly: WWFY</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="78" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="78" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>Back To Basics</h1>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hacker Profile<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Survival Kit"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"author"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"encima"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/styles.css?v=1.0"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/scripts.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="79" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="79" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>Final Exercise</h1>
+<p><img src="https://media.giphy.com/media/zrcPc3aH2dbZXfnL9N/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="80" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<ol>
+<li>Create a new directory for your website</li>
+<li>CD into it and create a new git repository</li>
+<li>Create a new file called <code>index.html</code></li>
+<li>Copy the code from the above slide into it</li>
+<li>Go to github and create a new repository (called <code>about-me</code>)</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="81" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<ol start="6">
+<li>Go to the settings of the repository and scroll down to <code>Github Pages</code></li>
+<li>Enable it for the <code>master</code> branch</li>
+<li>Copy the URL and perform the command to add it as a <code>remote</code></li>
+<li>Edit the file to show some information about you</li>
+<li>Create <code>img</code> and <code>css</code> folders</li>
+<li>Add a picture of you to the folder (if you are happy for it to be public)</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="82" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>CSS</h1>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-selector-tag">body</span> { <span class="hljs-comment">//element</span>
+    <span class="hljs-attribute">background</span>:blue;
+    <span class="hljs-attribute">color</span>:white;
+    <span class="hljs-attribute">text-align</span>:center;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-selector-class">.centred</span> { <span class="hljs-comment">//class</span>
+    <span class="hljs-attribute">margin-left</span>: auto;
+    <span class="hljs-attribute">margin-right</span>: auto;
+    <span class="hljs-attribute">display</span>:block;
+}
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="83" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="83" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<ol start="11">
+<li>Copy the <code>site/css/styles.css</code> file into your repository.</li>
+<li>Play around!</li>
+<li>Edit it and go wild.</li>
+<li>Commit and push <strong>all</strong> changes</li>
+<li>Open a browser and go to:<br />
+<code>https://&lt;USERNAME&gt;.github.io/profile</code></li>
+<li>Done!</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="84" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="84" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>But..I want more!</h2>
+<p><img src="https://media.giphy.com/media/bEvQzecJohmOQ/giphy.gif" alt="" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="85" data-marpit-fragments="5" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="85" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Useful Sites</h2>
+<ul>
+<li data-marpit-fragment="1"><a href="https://stackoverflow.com">Help</a></li>
+<li data-marpit-fragment="2"><a href="https://devdocs.io">All Docs</a></li>
+<li data-marpit-fragment="3"><a href="https://developer.mozilla.org">Web Docs</a></li>
+<li data-marpit-fragment="4">[Community] (<a href="https://www.reddit.com/r/learnprogramming/">https://www.reddit.com/r/learnprogramming/</a>)</li>
+<li data-marpit-fragment="5">[Learning/Resources] (<a href="https://github.com/mike-north/awesome-learn-to-code">https://github.com/mike-north/awesome-learn-to-code</a>)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="86" data-marpit-fragments="3" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="86" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>Hackathon  Tips - Dev</h1>
+<ul>
+<li data-marpit-fragment="1">The right tool for the job is...
+<ul>
+<li data-marpit-fragment="2">The one(s) you know</li>
+</ul>
+</li>
+<li data-marpit-fragment="3">As much as you may love the project, you will likely stop after Sunday; leave it in a usable state</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="87" data-marpit-fragments="7" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="87" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h1>Hackathon Tips - Non Dev</h1>
+<ul>
+<li data-marpit-fragment="1">Never underestimate the pitch</li>
+<li data-marpit-fragment="2">Never assume your audience
+<ul>
+<li data-marpit-fragment="3">i.e. They will know what an API is</li>
+</ul>
+</li>
+<li data-marpit-fragment="4">Check in with your team <strong>often</strong></li>
+<li data-marpit-fragment="5">Shut off when you need to
+<ul>
+<li data-marpit-fragment="6">Individually and as a</li>
+</ul>
+</li>
+<li data-marpit-fragment="7">Not all time needs to be spent coding</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="88" data-class="lead invert" data-paginate="true" data-background-color="gray" data-color="white" data-theme="gaia" class="lead invert" data-marpit-pagination="88" data-marpit-pagination-total="88" style="--class:lead invert;--paginate:true;--background-color:gray;--color:white;--theme:gaia;color:white;background-color:gray;background-image:none;">
+<h2>Go Forth And Hack</h2>
+<p>Spread the word, bring your friends</p>
+<p><a href="https://www.womenplusplus.ch/">W++</a><br />
+<a href="https://www.womenplusplus.ch/hacknlead">Hack'n'Lead</a><br />
+<a href="https://www.womenplusplus.ch/events">Events</a></p>
+</section>
+</foreignObject></svg></article><script>!function(){"use strict";const t=()=>"Apple Computer, Inc."===navigator.vendor?[e]:[];function e(t){Array.from(document.getElementsByTagName("svg"),e=>{if(e.hasAttribute("data-marpit-svg")){const{clientHeight:r,clientWidth:a}=e;e.style.transform||(e.style.transform="translateZ(0)");const i=t||e.currentScale||1,n=e.viewBox.baseVal.width/i,s=e.viewBox.baseVal.height/i,o=Math.min(r/s,a/n);Array.from(e.querySelectorAll(":scope > foreignObject"),t=>{const e=t.x.baseVal.value,i=t.y.baseVal.value;Array.from(t.querySelectorAll(":scope > section"),t=>{t.style.transformOrigin||(t.style.transformOrigin="0 0");const l=(a-o*n)/2-e,c=(r-o*s)/2-i;t.style.transform=`translate3d(${l}px,${c}px,0) scale(${o}) translate(${e}px,${i}px)`})})}})}const r="data-marp-fitting",a="data-marp-fitting-code",i="data-marp-fitting-math",n=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};!function(e=!0){const s=()=>{for(const e of t())e();Array.from(document.querySelectorAll(`svg[${r}="svg"]`),t=>{const e=t.firstChild,r=e.firstChild,{scrollWidth:s,scrollHeight:o}=r;let l,c=1;if(t.hasAttribute(a)&&(l=t.parentElement.parentElement),t.hasAttribute(i)&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft)-parseFloat(t.paddingRight));e&&(c=e)}const m=Math.max(s,c),p=Math.max(o,1),g=`0 0 ${m} ${p}`;n(e,"width",`${m}`),n(e,"height",`${p}`),n(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),n(t,"viewBox",g)&&t.classList.toggle("__reflow__")}),e&&window.requestAnimationFrame(s)};s()}()}();
+</script><script>!function(){"use strict";var e={from:function(e,t){var n=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),r=[].filter.call("string"==typeof e.slides?n.querySelectorAll(e.slides):e.slides||n.children,function(e){return"SCRIPT"!==e.nodeName}),i=r[0],l={},o=function(e,t){r[e]&&(c("deactivate",u(i,t)),i=r[e],c("activate",u(i,t)))},s=function(e,t){var n=r.indexOf(i)+e;c(e>0?"next":"prev",u(i,t))&&o(n,t)},a=function(e,t){l[e]=(l[e]||[]).filter(function(e){return e!==t})},c=function(e,t){return(l[e]||[]).reduce(function(e,n){return e&&!1!==n(t)},!0)},u=function(e,t){return(t=t||{}).index=r.indexOf(e),t.slide=e,t},d={on:function(e,t){return(l[e]||(l[e]=[])).push(t),a.bind(null,e,t)},off:a,fire:c,slide:function(e,t){if(!arguments.length)return r.indexOf(i);c("slide",u(r[e],t))&&o(e,t)},next:s.bind(null,1),prev:s.bind(null,-1),parent:n,slides:r};return(t||[]).forEach(function(e){e(d)}),o(0),d}},t=function(){return function(e){e.slides.forEach(function(e){e.addEventListener("keydown",function(e){(/INPUT|TEXTAREA|SELECT/.test(e.target.nodeName)||"true"===e.target.contentEditable)&&e.stopPropagation()})})}};function n(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.map(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{e.slides.map(e=>e.classList.remove("bespoke-marp-active")),t.slide.classList.add("bespoke-marp-active")})}function r(e=2e3){return t=>{let n;function r(){n&&clearTimeout(n),n=setTimeout(()=>{t.parent.classList.add("bespoke-marp-inactive")},e),t.parent.classList.remove("bespoke-marp-inactive")}document.addEventListener("mousedown",r),document.addEventListener("mousemove",r),document.addEventListener("touchend",r),setTimeout(r,0)}}function i(e){let t=0,n=0;const r=e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]),i=e=>void 0!==r[t][n+e],l=(i,l)=>{t=i,n=l,r.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const r=t<i||t===i&&n<=l;e.setAttribute("data-bespoke-marp-fragment",r?"active":"inactive"),t===i&&n===l?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fire("fragment",{slide:e.slides[i],index:i,fragments:r[i],fragmentIndex:l})};e.on("next",()=>{if(i(1))return l(t,n+1),!1;const e=t+1;r[e]&&l(e,0)}),e.on("prev",()=>{if(i(-1))return l(t,n-1),!1;const e=t-1;r[e]&&l(e,r[e].length-1)}),e.on("slide",({index:e,fragment:t})=>{let n=0;if(void 0!==t){const i=r[e];if(i){const{length:e}=i;n=-1===t?e-1:Math.min(Math.max(t,0),e-1)}}l(e,n)}),l(0,0)}var l,o=function(e,t){return e(t={exports:{}},t.exports),t.exports}(function(e){!function(){var t="undefined"!=typeof window&&void 0!==window.document?window.document:{},n=e.exports,r="undefined"!=typeof Element&&"ALLOW_KEYBOARD_INPUT"in Element,i=function(){for(var e,n=[["requestFullscreen","exitFullscreen","fullscreenElement","fullscreenEnabled","fullscreenchange","fullscreenerror"],["webkitRequestFullscreen","webkitExitFullscreen","webkitFullscreenElement","webkitFullscreenEnabled","webkitfullscreenchange","webkitfullscreenerror"],["webkitRequestFullScreen","webkitCancelFullScreen","webkitCurrentFullScreenElement","webkitCancelFullScreen","webkitfullscreenchange","webkitfullscreenerror"],["mozRequestFullScreen","mozCancelFullScreen","mozFullScreenElement","mozFullScreenEnabled","mozfullscreenchange","mozfullscreenerror"],["msRequestFullscreen","msExitFullscreen","msFullscreenElement","msFullscreenEnabled","MSFullscreenChange","MSFullscreenError"]],r=0,i=n.length,l={};r<i;r++)if((e=n[r])&&e[1]in t){for(r=0;r<e.length;r++)l[n[0][r]]=e[r];return l}return!1}(),l={change:i.fullscreenchange,error:i.fullscreenerror},o={request:function(e){return new Promise(function(n){var l=i.requestFullscreen,o=function(){this.off("change",o),n()}.bind(this);e=e||t.documentElement,/ Version\/5\.1(?:\.\d+)? Safari\//.test(navigator.userAgent)?e[l]():e[l](r?Element.ALLOW_KEYBOARD_INPUT:{}),this.on("change",o)}.bind(this))},exit:function(){return new Promise(function(e){if(this.isFullscreen){var n=function(){this.off("change",n),e()}.bind(this);t[i.exitFullscreen](),this.on("change",n)}else e()}.bind(this))},toggle:function(e){return this.isFullscreen?this.exit():this.request(e)},onchange:function(e){this.on("change",e)},onerror:function(e){this.on("error",e)},on:function(e,n){var r=l[e];r&&t.addEventListener(r,n,!1)},off:function(e,n){var r=l[e];r&&t.removeEventListener(r,n,!1)},raw:i};i?(Object.defineProperties(o,{isFullscreen:{get:function(){return Boolean(t[i.fullscreenElement])}},element:{enumerable:!0,get:function(){return t[i.fullscreenElement]}},enabled:{enumerable:!0,get:function(){return Boolean(t[i.fullscreenEnabled])}}}),n?(e.exports=o,e.exports.default=o):window.screenfull=o):n?e.exports=!1:window.screenfull=!1}()});function s(e){e.fullscreen=()=>o&&o.toggle(document.body),document.addEventListener("keydown",t=>{70!==t.which&&122!==t.which||t.altKey||t.ctrlKey||t.metaKey||!o||!o.enabled||(e.fullscreen(),t.preventDefault())})}function a(e={}){const t=Object.assign({history:!0},e);return e=>{function n(){const t=parseInt(window.location.hash.slice(1),10);Number.isNaN(t)||function(t){const n=Math.max(0,Math.min(t,e.slides.length-1));n!==e.slide()&&e.slide(n)}(t-1)}setTimeout(()=>{n(),e.on("activate",e=>{t.history?window.location.hash=e.index+1:window.location.replace(`#${e.index+1}`)}),window.addEventListener("hashchange",n)},0)}}function c(e={}){const t=Object.assign({interval:200},e);return e=>{document.addEventListener("keydown",t=>{(32===t.which&&t.shiftKey||33===t.which||37===t.which||38===t.which)&&e.prev(),(32===t.which&&!t.shiftKey||34===t.which||39===t.which||40===t.which)&&e.next(),35===t.which&&e.slide(e.slides.length-1,{fragment:-1}),36===t.which&&e.slide(0)});let n,r,i=0;e.parent.addEventListener("wheel",o=>{let s=!1;const a=(e,t)=>{e&&(s=s||function(e,t){return function(e,t){const n=t===l.X?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]}(e,t)&&function(e,t){const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r}(getComputedStyle(e),t)}(e,t)),e&&e.parentElement&&a(e.parentElement,t)};if(0!==o.deltaX&&a(o.target,l.X),0!==o.deltaY&&a(o.target,l.Y),s)return;o.preventDefault(),r&&clearTimeout(r),r=setTimeout(()=>{n=0},t.interval);const c=Date.now()-i<t.interval,u=Math.sqrt(Math.pow(o.deltaX,2)+Math.pow(o.deltaY,2)),d=u<=n;if(n=u,c||d)return;let f;(o.deltaX>0||o.deltaY>0)&&(f="next"),(o.deltaX<0||o.deltaY<0)&&(f="prev"),f&&(e[f](),i=Date.now())})}}function u(e=".bespoke-marp-osc"){const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[data-bespoke-marp-osc=${JSON.stringify(e)}]`).forEach(n)};return o&&!o.enabled&&n("fullscreen",e=>e.style.display="none"),e=>{t.addEventListener("click",t=>{if(t.target instanceof HTMLElement)switch(t.target.dataset.bespokeMarpOsc){case"next":e.next();break;case"prev":e.prev();break;case"fullscreen":"function"==typeof e.fullscreen&&o&&o.enabled&&e.fullscreen()}}),e.parent.appendChild(t),e.on("activate",({index:t})=>{n("page",n=>n.textContent=`Page ${t+1} of ${e.slides.length}`)}),e.on("fragment",({index:t,fragments:r,fragmentIndex:i})=>{n("prev",e=>e.disabled=0===t&&0===i),n("next",n=>n.disabled=t===e.slides.length-1&&i===r.length-1)}),o&&o.onchange(()=>n("fullscreen",e=>e.classList.toggle("exit",o&&o.isFullscreen)))}}!function(e){e.X="X",e.Y="Y"}(l||(l={}));const d=".bespoke-progress-bar";function f(e){e.on("activate",t=>{document.querySelectorAll(d).forEach(n=>{n.style.flexBasis=`${100*t.index/(e.slides.length-1)}%`})})}function h(e={}){const t=Object.assign({slope:Math.tan(-35*Math.PI/180),swipeThreshold:30},e);return e=>{let n;const r=e.parent,i=e=>{const t=r.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};r.addEventListener("touchstart",e=>{n=1===e.touches.length?i(e.touches[0]):void 0}),r.addEventListener("touchmove",e=>{if(n)if(1===e.touches.length){e.preventDefault();const t=i(e.touches[0]),r=t.x-n.x,l=t.y-n.y;n.delta=Math.sqrt(Math.pow(Math.abs(r),2)+Math.pow(Math.abs(l),2)),n.radian=Math.atan2(r,l)}else n=void 0}),r.addEventListener("touchend",r=>{if(n){if(n.delta&&n.delta>=t.swipeThreshold){let i=n.radian-t.slope;i=(i+Math.PI)%(2*Math.PI)-Math.PI,e[i<0?"next":"prev"](),r.stopPropagation()}n=void 0}})}}e.from(document.getElementById("presentation"),[t(),n,r(),a({history:!1}),c(),s,f,h(),u(),i])}();
+</script></body></html>
