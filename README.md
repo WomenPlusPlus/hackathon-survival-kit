@@ -1,9 +1,8 @@
 ---
 marp: true
 title: Your Hackathon Survival Kit
-theme: gaia
+theme: uncover
 class:
- - lead
  - invert
 paginate: true
 ---
@@ -19,13 +18,13 @@ paginate: true
 
 ---
 
-* Have you never been to a hackathon before? Afraid of what to expect, what is expected of you or that you do not have experience.
+- Have you never been to a hackathon before? Afraid of what to expect, what is expected of you or that you do not have experience.
 
-* SHUT THAT VOICE UP. Anyone, and I mean anyone, should feel welcome at a hackathon.
+- SHUT THAT VOICE UP. Anyone, and I mean anyone, should feel welcome at a hackathon.
 
 ---
 
-* But, if you want to contribute and you do not have such a technical background, then this workshop can help you hit the ground running.
+- But, if you want to contribute and you do not have such a technical background, then this workshop can help you hit the ground running.
 
 ![](https://media.giphy.com/media/7kn27lnYSAE9O/giphy.gif)
 
@@ -33,7 +32,7 @@ paginate: true
 
 ## Who Am I? You Might Ask
 
-* What right do I have to `mansplain` the basics of a field that was originally dominated by women?
+- What right do I have to `mansplain` the basics of a field that was originally dominated by women?
 * Well...none
 * But I taught these things to myself before, during and after university
 * And I have been teaching since I was 21
@@ -51,10 +50,10 @@ And I am a **huge hypocrite**
 
 ## Topics
 
-* The Command Line
-* Git
-* Github/Gitlab/Bitbucket etc
-* Web Development Introduction
+1. The Command Line
+2. Git
+3. Github/Gitlab/Bitbucket etc
+4. Web Development Introduction
 
 ---
 
@@ -70,17 +69,17 @@ There is none! Ask if you need help, pee when you want and scream when you are f
 
 First, the command line, also known as:
 
-* Terminal
-* Bash
-* Shell
-* Cmd
-* Command Prompt
-* Console
-* Barry (ok, not this one)
+- Terminal
+- Bash
+- Shell
+- Cmd
+- Command Prompt
+- Console
+- Barry (ok, not this one)
 
 ---
 
-## What is the shell?
+## What The shell?
 
 Before we had the magic of windows and Graphical User Interfaces,
 we had to do things the old way... with words on a pleasant black screen with green font.
@@ -155,8 +154,8 @@ $ pwd
 pwd - present working directory, this is where you are right now
 
 Normall, this is your HOME directory:
-* Linux: /home/USERNAME
-* Mac: /Users/USERNAME
+- Linux: /home/USERNAME
+- Mac: /Users/USERNAME
 
 (**NOTE**: In Windows, it is `cd`)
 
@@ -183,8 +182,14 @@ if you are a Windows User (using command prompt), then you must remember to use 
 ### Make a directory
 `mkdir new_folder`
 
-The `~` symbol is a shortcut for your `HOME` and can always use:
-`cd ~`
+--- 
+
+## `$HOME` is where the `~` is
+
+The `~` symbol is a shortcut for your `HOME` and you can always use:
+`cd ~` to go back there.
+
+Also: `$HOME/Downloads` means /home/you/Downloads
 
 ---
 
@@ -217,11 +222,11 @@ l =  long listing format (Give me all the details!)
 
 ---
 
-1. Change the directory to your home directory
-2. Create a new folder called 'newDir'
-3. Change into that directory
-4. List the contents
-5. Now list all the contents (showing all hidden files)
+1 Change the directory to your home directory
+2 Create a new folder called 'newDir'
+3 Change into that directory
+4 List the contents
+5 Now list all the contents (showing all hidden files)
 
 What is in there? What do you think they mean?
 
@@ -242,25 +247,31 @@ What is in there? What do you think they mean?
 
 ### Here Be Dragons!
 
-* Notice how these things run with no confirmation or anything?
-* This little black screen has the power to make...or break your computer
-* Always double check what you type
-* **NEVER** run a script from the internet or from someone you do not know
+- Notice how these things run with no confirmation or anything?
+- This little black screen has the power to make...or break your computer
+- Always double check what you type
+- **NEVER** run a script from the internet or from someone you do not know
 
 ---
 
-Your computer is like a relaxed Grandma. She will let you:
+## Your computer is like a relaxed Grandma.
 
-* eat all the sweets
-* paint your own room
-* destroy your own furniture
+![bg right contain](https://vignette.wikia.nocookie.net/courage/images/d/d9/Muriel_Bagge.png/revision/latest?cb=20181025053335)
 
-but she will **not**:
+---
+
+## She will let you:
+
+- eat all the sweets
+- paint your own room
+- destroy your own furniture
+
+---
+
+## but she will **not**:
 
 * Let you open the medicine cupboard
 * Let you paint the lounge
-
-![bg right contain](https://vignette.wikia.nocookie.net/courage/images/d/d9/Muriel_Bagge.png/revision/latest?cb=20181025053335)
 
 ---
 
@@ -277,9 +288,9 @@ Every folder at the root `/` level is protected and you cannot touch it.
 ### Superuser
 
 To do these protected things:
-* Modify system files
-* Install programs
-* Start and stop services
+- Modify system files
+- Install programs
+- Start and stop services
 
 You must be an admin. Usually, in Linux, your account has admin rights but is stopped from doing these things by default.
 
@@ -297,8 +308,8 @@ Try running:
 What happens? Why?
 
 To run this command, you have 2 options:
-1. `su`
-2. `sudo`
+- 1 `su`
+- 2 `sudo`
 
 ---
 
@@ -326,11 +337,11 @@ SUDO asks your machine to run the command you like as the root user and then swi
 
 ### Tips and Tricks
 
-* History - your shell knows what you ran before:
+- History - your shell knows what you ran before:
 `use the up and down keys to move through your history of commands`
-* Completion - files and folders can be long
+- Completion - files and folders can be long
 `use the TAB key to autocomplete commands and file paths - this is CASE SENSITIVE`
-* SEARCH - For things you ran a long time ago
+- SEARCH - For things you ran a long time ago
 `press CTRL+r to start a search and type what you are looking for, you will be shown matching results as you type`
 
 
@@ -348,9 +359,10 @@ SUDO asks your machine to run the command you like as the root user and then swi
 A Version Control System (VCS) that allows you to store files and access their  history at different points in time
 
 TL;DR: A manual Dropbox that stops you from making:
-* doc1.docx
-* doc1_final.docx
-* doc1_final_revised.docx
+1. doc1.docx
+2. doc1_final.docx
+3. doc1_final_FINAL_revised.docx
+4. doc1_final_I_will_kill_you_all.docx
 
 ---
 
@@ -358,25 +370,25 @@ TL;DR: A manual Dropbox that stops you from making:
 
 [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-* Linux: `apt/yum install git`
-* OSX: `brew install git`
+- Linux: `apt/yum install git`
+- OSX: `brew install git`
 
 ---
 
 ## Gitting Started - Locally
 
-* Git - A version control system that manages your files
-* Repository - Git tracks changes down to the line, so it would not be fun to use it for your whole hard drive
+- Git - A version control system that manages your files
+- Repository - Git tracks changes down to the line, so it would not be fun to use it for your whole hard drive
     A repository is a folder that contains all of your code (it **can** contain subfolders).
     Think of a repository as a project. Each repo is a new project.
-* Init - Init initialises a git repo inside the directory you are currently in. Basically, it creates a hidden `.git`folder in that directory
+- Init - Init initialises a git repo inside the directory you are currently in. Basically, it creates a hidden `.git`folder in that directory
 
 ---
 
 ## Gitting Started - Locally
 
-* Add - Use this command to add files to your repository. By default, git will track nothing until you add some files.
-* Commit - A commit is a specific point in time that you want to track. Git is a manual tool, so you tell it when you have done something important
+- Add - Use this command to add files to your repository. By default, git will track nothing until you add some files.
+- Commit - A commit is a specific point in time that you want to track. Git is a manual tool, so you tell it when you have done something important
 
 ---
 
@@ -386,12 +398,12 @@ TL;DR: A manual Dropbox that stops you from making:
 
 ---
 
-1. Create a new directory called `git_some`
-2. Cd into that directory
-3. Run `git init`
-4. Create a new file called `testing123.txt`
-5. Run `git add testing123.txt`
-6. Run `git commit -m 'Initial commit'`
+- 1 Create a new directory called `git_some`
+- 2 Cd into that directory
+- 3 Run `git init`
+- 4 Create a new file called `testing123.txt`
+- 5 Run `git add testing123.txt`
+- 6 Run `git commit -m 'Initial commit'`
 
 ---
 
@@ -416,27 +428,27 @@ We can see that by running `git log`
 
 ## Code Along Time!
 
-1. Let's add a file `testing234.txt`
-2. Now add it to git
-3. And a new file called `dont_you.txt`
-4. Now commit it with the message `add new test files`
-5. Whoa now! Did we mess up?
+- 1 Let's add a file `testing234.txt`
+- 2 Now add it to git
+- 3 And a new file called `dont_you.txt`
+- 4 Now commit it with the message `add new test files`
+- 5 Whoa now! Did we mess up?
 
 ---
 
 ## Yes we did!
 
-* We can check if we messed up by seeing the status of our repo, with `git status`
-* We see `dont_you.txt` is an untracked file! But we don't want to make a whole new commit, do we?
-* `git commit --amend` to the rescue!
-* Amend a commit removes all the files you added to git in the last commit and allow you to make a new commit'
+- We can check if we messed up by seeing the status of our repo, with `git status`
+- We see `dont_you.txt` is an untracked file! But we don't want to make a whole new commit, do we?
+- `git commit --amend` to the rescue!
+- Amend a commit removes all the files you added to git in the last commit and allow you to make a new commit'
 
 ---
 
 ## Let's Do It!
 
-* `git add dont_you.txt`
-* `git commit --amend`
+- `git add dont_you.txt`
+- `git commit --amend`
 
 Git will open up a text editor showing some information about your commit in the terminal, you can change the message to `forget about me` and close the editor (with `Ctrl-X` usually)
 
@@ -461,8 +473,8 @@ But wait, I wanted to keep a copy on my machine! I need it!
 Git keeps a history of everything you do, and it gives you some tools to change that history. The two we would use most often are `revert` and `reset`
 
 We can summarise their differences simply:
-* `revert` modifies the log to show you messed up (i.e. real history)
-* `reset` removes your mess ups from the log completely (i.e. propaganda)
+- `revert` modifies the log to show you messed up (i.e. real history)
+- `reset` removes your mess ups from the log completely (i.e. propaganda)
 
 ---
 
@@ -478,11 +490,11 @@ Sometimes you may want to try something a bit...crazy (like at a hackathon). May
 
 ---
 
-1. Create a new repo called `reversion`
-2. Add some files and create an initial commit
-3. Now create some files with stupid names and create a second commit
-4. Use git log to find your second commit ID
-5. Run `git revert <ID>`
+- 1 Create a new repo called `reversion`
+- 2 Add some files and create an initial commit
+- 3 Now create some files with stupid names and create a second commit
+- 4 Use git log to find your second commit ID
+- 5 Run `git revert <ID>`
 
 What changed? What does `git log` say now?
 
@@ -500,11 +512,11 @@ Reset is a bit different and will not just undo the commit you specify but it wi
 
 ---
 
-1. Create a new repo called `reset`
-2. Add some files as usual and commit.
-3. Now create a few extra commits with files named 2,3,4,5
-4. Find the ID of your second commit
-5. Run `git reset --hard <ID>`
+- 1 Create a new repo called `reset`
+- 2 Add some files as usual and commit.
+- 3 Now create a few extra commits with files named 2,3,4,5
+- 4 Find the ID of your second commit
+- 5 Run `git reset --hard <ID>`
 
 What changed? What does `git log` show? Where are the other commits?
 
@@ -551,6 +563,10 @@ Done with the new thing you wanted to do?
 `git checkout master`
 `git merge <new_branch_name>`
 
+---
+
+## SIDENOTE: Merging
+
 ![bg right contain](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwac-cdn.atlassian.com%2Fdam%2Fjcr%3A83323200-3c57-4c29-9b7e-e67e98745427%2FBranch-1.png%3FcdnVersion%3Djo&f=1)
 
 ---
@@ -571,34 +587,19 @@ Git is a great tool for backups, but it is not so useful when you are only backi
 
 We have quite a few options.
 
-And, the one we use today is the one you all choose.
 
----
-
-## Team Work Makes the Dream Work
-
-Split into 3 groups.
-
-1. Github
-2. Gitlab
-3. Bitbucket
-
-10 mins to make a 2 min (verbal) presentation about the site, its features, its benefits and drawbacks.
-
----
-
-I kid, of course. There is no such thing as free will, we will be using Github.
-
-Not because it is ethical, moral or even the best choice. But, like all choices, because it is popular.
+- 1 Github
+- 2 Gitlab
+- 3 Bitbucket
 
 ---
 
 ## Remote Work
 
 Now, we need to:
-1. Create accounts
-2. Create a repository
-3. Copy the url of the repository and tell git about it
+- 1 Create accounts
+- 2 Create a repository
+- 3 Copy the url of the repository and tell git/your machine about it
 
 `git remote add origin <URL>`
 
@@ -642,13 +643,13 @@ This is basically a secure key created for your device that allows you to connec
 
 ## Together Time
 
-1. `ssh-keygen`
-2. Choose all the defaults
-3. Copy the contents of the created file:
+- 1 `ssh-keygen`
+- 2 Choose all the defaults (press ENTER)
+- 3 Copy the contents of the created file:
 `cat ~/.ssh/id_rsa.pub`
-4. Go to github.com and click on your profile->settings->SSH and GPG Keys
-5. Copy the file contents into the big text box and save
-6. Now you can `push` and `pull` with no problems!
+- 4 Go to github.com and click on your profile->settings->SSH and GPG Keys
+- 5 Copy the file contents into the big text box and save
+- 6 Now you can `push` and `pull` with no problems!
 
 ---
 
@@ -685,9 +686,9 @@ print('HELP ME');
 
 ## Fixing a Merge Commit
 
-* The file clearly shows where the issues are and you can choose to remove their code, your code or manually merge it.
-* Once you do, add the file to git and commit, explaining your changes
-* PROFIT
+- The file clearly shows where the issues are and you can choose to remove their code, your code or manually merge it.
+- Once you do, add the file to git and commit, explaining your changes
+- PROFIT
 
 ---
 
@@ -701,16 +702,16 @@ If we run out of time, your homework will be to go through the code in the repos
 
 # What Have We Covered?
 
-* CLI
-* Git
-* Github
+1. CLI
+2. Git
+3. Github
 
 ---
 
 # Next?
 
-* Web Things!
-    * Well, Frontend web things
+- Web Things!
+    - Well, Frontend web things
 
 ---
 
@@ -720,11 +721,11 @@ If we run out of time, your homework will be to go through the code in the repos
 
 # Frontend?
 
-* HTML
+- HTML
     * Hyper Text Markup Language
-* CSS
+- CSS
     * Cascading Style Sheets
-* JS
+- JS
     * JavaScript
 
 ---
@@ -738,8 +739,8 @@ If we run out of time, your homework will be to go through the code in the repos
 
 # What Should You/Your Team Use?
 
-* WTFYW
-    * Family Friendly: WWFY
+- WTFYW
+    - Family Friendly: WWFY
 
 ---
 
@@ -770,20 +771,20 @@ If we run out of time, your homework will be to go through the code in the repos
 
 ---
 
-1. Create a new directory for your website
-2. CD into it and create a new git repository
-3. Create a new file called `index.html`
-4. Copy the code from the above slide into it
-5. Go to github and create a new repository (called `about-me`)
+- 1. Create a new directory for your website
+- 2. CD into it and create a new git repository
+- 3. Create a new file called `index.html`
+- 4. Copy the code from the above slide into it
+- 5. Go to github and create a new repository (called `about-me`)
 
 ---
 
-6. Go to the settings of the repository and scroll down to `Github Pages`
-7. Enable it for the `master` branch
-8. Copy the URL and perform the command to add it as a `remote`
-9. Edit the file to show some information about you
-10. Create `img` and `css` folders
-11. Add a picture of you to the folder (if you are happy for it to be public)
+- 6. Go to the settings of the repository and scroll down to `Github Pages`
+- 7. Enable it for the `master` branch
+- 8. Copy the URL and perform the command to add it as a `remote`
+- 9. Edit the file to show some information about you
+- 10. Create `img` and `css` folders
+- 11. Add a picture of you to the folder (if you are happy for it to be public)
 
 ---
 
@@ -806,13 +807,13 @@ body { //element
 
 ---
 
-11. Copy the `site/css/styles.css` file into your repository.
-12. Play around!
-13. Edit it and go wild.
-14. Commit and push **all** changes
-15. Open a browser and go to:
+- 12 Copy the `site/css/styles.css` file into your repository.
+- 13 Play around!
+- 14 Edit it and go wild.
+- 15 Commit and push **all** changes
+- 16 Open a browser and go to:
     `https://<USERNAME>.github.io/profile`
-16. Done!
+
 
 ---
 
@@ -824,19 +825,21 @@ body { //element
 
 ## Useful Sites
 
-* [Help](https://stackoverflow.com)
-* [All Docs](https://devdocs.io)
-* [Web Docs](https://developer.mozilla.org)
-* [Community] (https://www.reddit.com/r/learnprogramming/)
-* [Learning/Resources] (https://github.com/mike-north/awesome-learn-to-code)
+- [Help](https://stackoverflow.com)
+- [All Docs](https://devdocs.io)
+- [Web Docs](https://developer.mozilla.org)
+- [Community] (https://www.reddit.com/r/learnprogramming/)
+- [Learning/Resources] (https://github.com/mike-north/awesome-learn-to-code)
 
 ---
 
 # Hackathon  Tips - Dev
 
-* The right tool for the job is...
+- The right tool for the job is...
     * The one(s) you know
-* As much as you may love the project, you will likely stop after Sunday; leave it in a usable state
+- As much as you may love the project, you will likely stop after Sunday; leave it in a usable state
+- Team work makes the dream work
+- Production ready does not exist in a hackathon
 
 ---
 
@@ -847,7 +850,7 @@ body { //element
     * i.e. They will know what an API is
 * Check in with your team **often**
 * Shut off when you need to 
-    * Individually and as a
+    * Individually and as a team
 * Not all time needs to be spent coding
 
 ---
