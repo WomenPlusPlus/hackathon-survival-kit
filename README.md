@@ -1,9 +1,10 @@
 ---
 marp: true
 title: Your Hackathon Survival Kit
-theme: uncover
+theme: gaia
 class:
  - invert
+ - lead
 paginate: true
 ---
 
@@ -412,9 +413,9 @@ TL;DR: A manual Dropbox that stops you from making:
 Not too hard, right? Git is like a snapshot tool on your machine. It can monitor repositories and store all the changes. When you want to go back, git will do it for you.
 
 Commits - Notice that we used the `-m` argument here? **ALWAYS** do this! Every commit should have a message with it and that message should [be](https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503):
-* Clear
-* Informative
-* Short
+- Clear
+- Informative
+- Short
 
 ---
 
