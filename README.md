@@ -49,6 +49,28 @@ And I am a **huge hypocrite**
 
 ---
 
+# Hackathon  Tips - Dev
+
+- The right tool for the job is...
+    * The one(s) you know
+- As much as you may love the project, you will likely stop after Sunday; leave it in a usable state
+- Team work makes the dream work
+- Production ready does not exist in a hackathon
+
+---
+
+# Hackathon Tips - Non Dev
+
+* Never underestimate the pitch
+* Never assume your audience
+    * i.e. They will know what an API is
+* Check in with your team **often**
+* Shut off when you need to 
+    * Individually and as a team
+* Not all time needs to be spent coding
+
+---
+
 ## Topics
 
 1. The Command Line
@@ -831,28 +853,6 @@ body { //element
 - [Web Docs](https://developer.mozilla.org)
 - [Community] (https://www.reddit.com/r/learnprogramming/)
 - [Learning/Resources] (https://github.com/mike-north/awesome-learn-to-code)
-
----
-
-# Hackathon  Tips - Dev
-
-- The right tool for the job is...
-    * The one(s) you know
-- As much as you may love the project, you will likely stop after Sunday; leave it in a usable state
-- Team work makes the dream work
-- Production ready does not exist in a hackathon
-
----
-
-# Hackathon Tips - Non Dev
-
-* Never underestimate the pitch
-* Never assume your audience
-    * i.e. They will know what an API is
-* Check in with your team **often**
-* Shut off when you need to 
-    * Individually and as a team
-* Not all time needs to be spent coding
 
 ---
 
