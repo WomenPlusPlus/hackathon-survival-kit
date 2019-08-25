@@ -71,6 +71,21 @@ And I am a **huge hypocrite**
 
 ---
 
+## Useful Software
+
+* Code Editor - [VS Code](https://code.visualstudio.com), [Atom](https://atom.io), [Sublime Text](https://sublimetext.com)
+* [Git](https://git-scm.com/downloads)
+* Tasks:
+    * Github Projects
+    * Asana, Todoist, Trello
+* Git GUI:
+    * SourceTree
+    * Github for Desktop
+    * Git-cola
+    * Ungit
+    
+---
+
 ## Topics
 
 1. The Command Line
