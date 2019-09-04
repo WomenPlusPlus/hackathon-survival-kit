@@ -11,7 +11,7 @@ paginate: true
 
 # The Survival Kit for your First Hackathon
 
-#### encima.github.io/hackathon-survival-kit
+womenplusplus.github.io/hackathon-survival-kit
 
 ### Women++ 
 ### Chris Gwilliams https://github.com/encima
